@@ -8,17 +8,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+<header class="bg-white pt-6 pb-3 border-b-4 border-red-600 shadow-sm">
+  <div class="container mx-auto px-4 text-center">
+    <div class="inline-block leading-tight">
+      <h1 class="text-4xl font-semibold tracking-tight">
+        <span class="text-red-600">hitta</span><span class="text-gray-800">intemig</span>
+      </h1>
+      <div class="text-base font-semibold text-red-600 text-right pr-1 -mt-1">.se</div>
+    </div>
+  </div>
+</header>
 
-    <header class="bg-red-600 text-white py-6 shadow-md">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl font-bold">HITTA INTE MIG</h1>
-            <p class="text-lg leading-relaxed">
-                Ta bort dina personuppgifter online
-            </p>
-        </div>
-    </header>
 
+
+
+<body">
     <main class="flex-grow container mx-auto px-4 py-8 space-y-8">
 
         <section>
@@ -38,57 +42,58 @@
                 <strong>birthday.se</strong>, <strong>upplysning.se</strong>, <strong>ratsit.se</strong>,
                 <strong>krimfup.se</strong>, <strong>lexbase.se</strong>, <strong>biluppgifter.se</strong> och
                 <strong>merinfo.se</strong>. <br>
-                Vi hjälper även till med att sammanställa en lista med andra saker du kan göra för att skydda din
-                integritet online.
+                Vi hjälper även till med att sammanställa en lista med andra saker du kan göra för att skydda online.
         </section>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
             <section>
                 <h2 class="text-2xl font-semibold mb-3">Fyll i formuläret</h2>
-                <form id="contact-form" class="max-w-xl bg-white p-6 rounded shadow space-y-6">
+<form id="contact-form" class="max-w-xl bg-white p-6 rounded shadow space-y-6">
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Din mejladress (Kopia skickas hit)</span>
-                        <input type="email" id="email" placeholder="din@mejl.se" required
-                            class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
-                    </label>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Din mejladress (Kopia skickas hit)</span>
+    <input type="email" id="email" name="email" autocomplete="email" placeholder="din@mejl.se" required
+      class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
+  </label>
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Namn</span>
-                        <input type="text" id="name" name="name" placeholder="Ditt namn" required
-                            class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
-                    </label>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Namn</span>
+    <input type="text" id="name" name="name" autocomplete="name" placeholder="Ditt namn" required
+      class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
+  </label>
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Adress</span>
-                        <input type="text" id="address" placeholder="Din adress" required
-                            class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
-                    </label>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Adress</span>
+    <input type="text" id="address" name="address" autocomplete="street-address" placeholder="Din adress" required
+      class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
+  </label>
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Personnummer</span>
-                        <input type="text" id="ssn" placeholder="ÅÅÅÅMMDD-XXXX" required
-                            class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
-                    </label>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Personnummer</span>
+    <input type="text" id="ssn" name="ssn" autocomplete="off" placeholder="ÅÅÅÅMMDD-XXXX" required
+      class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
+  </label>
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Telefonnummer</span>
-                        <input type="tel" id="phone" placeholder="070-123 45 67" required
-                            class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
-                    </label>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Telefonnummer</span>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="070-123 45 67" required
+      class="mt-1 block w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500" />
+  </label>
 
-                    <label class="block">
-                        <span class="text-gray-700 font-medium">Förhandsgranskning av mejlinnehåll</span>
-                        <textarea id="preview" rows="14" readonly
-                            class="mt-1 block w-full rounded border border-gray-300 bg-gray-100 px-3 py-2 font-mono whitespace-pre-wrap"></textarea>
-                    </label>
+  <button type="submit"
+    class="w-full bg-red-600 text-white font-semibold py-2 rounded hover:bg-red-700 transition-colors">
+    Skicka mejl
+  </button>
 
-                    <button type="submit"
-                        class="w-full bg-red-600 text-white font-semibold py-2 rounded hover:bg-red-700 transition-colors">
-                        Skicka mejl
-                    </button>
-                </form>
+  <label class="block">
+    <span class="text-gray-700 font-medium">Förhandsgranskning av mejlinnehåll</span>
+    <textarea id="preview" rows="14" readonly
+      class="mt-1 block w-full rounded border border-gray-300 bg-gray-100 px-3 py-2 font-mono whitespace-pre-wrap"></textarea>
+  </label>
+
+</form>
+
             </section>
 
             <section class="mb-12">
@@ -107,7 +112,7 @@
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="hitta">
                         <label for="hitta" class="text-gray-800">
                             <a href="https://www.hitta.se/kontakta-oss/ta-bort-kontaktsida" target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Ta bort dina personuppgifter från Hitta.se (Krävs BankID)
                             </a>
                         </label>
@@ -117,7 +122,7 @@
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="eniro">
                         <label for="eniro" class="text-gray-800">
                             <a href="https://uppdatera.eniro.se/person" target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Ta bort dina personuppgifter från Eniro.se (Krävs BankID)
                             </a>
                         </label>
@@ -128,7 +133,7 @@
                             id="spärr-skatteverket">
                         <label for="spärr-skatteverket" class="text-gray-800">
                             <a href="https://www.skatteverket.se/..." target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Spärra obehörig adressändring hos Skatteverket
                             </a>
                         </label>
@@ -138,7 +143,7 @@
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="adresslaset">
                         <label for="adresslaset" class="text-gray-800">
                             <a href="https://www.adressandring.se/..." target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Aktivera Adresslåset
                             </a>
                         </label>
@@ -148,7 +153,7 @@
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="nix">
                         <label for="nix" class="text-gray-800">
                             <a href="https://www.nixtelefon.org/..." target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Blockera ditt telefonnummer från telefonförsäljare
                             </a>
                         </label>
@@ -158,15 +163,15 @@
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="google">
                         <label for="google" class="text-gray-800">
                             <a href="https://reportcontent.google.com/..." target="_blank"
-                                class="font-medium text-red-600 hover:underline">
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
                                 Ta bort dina personuppgifter från Google
                             </a>
                         </label>
                     </li>
                 </ul>
-                <p id="progress" class="mb-4 text-sm text-gray-700 font-medium">
-                    0/7 steg klara
-                </p>
+            <p id="progress" class="mb-4 text-m2 text-gray-700 font-medium text-center">
+            0/7 steg klara
+            </p>
             </section>
 
 
@@ -174,86 +179,6 @@
 
 
         </div>
-
-        <script>
-            const nameInput = document.getElementById('name');
-            const addressInput = document.getElementById('address');
-            const ssnInput = document.getElementById('ssn');
-            const phoneInput = document.getElementById('phone');
-            const emailInput = document.getElementById('email');
-            const preview = document.getElementById('preview');
-            const form = document.getElementById('contact-form');
-
-            function updatePreview() {
-                const name = nameInput.value.trim();
-                const address = addressInput.value.trim();
-                const ssn = ssnInput.value.trim();
-                const phone = phoneInput.value.trim();
-                const today = new Date().toISOString().split('T')[0];
-
-                preview.value = `Hej!
-Jag vill härmed utöva min rätt till radering med stöd av artikel 17 i dataskyddsförordningen.
-Jag ber er att radera alla personuppgifter som ni har om mig från er hemsida, däribland:
-Namn: ${name}
-Adress: ${address}
-Personnummer: ${ssn}
-Telefonnummer: ${phone}
-
-Ni kan hitta information om era skyldigheter som personuppgiftsansvarig på Integritetsskyddsmyndighetens webbplats (www.imy.se).
-
-Jag ser fram emot ert svar på min begäran om radering så snart som möjligt, senast inom en månad.
-
-Ni får gärna kontakta mig om ni har några frågor.
-Datum: ${today}
-Med vänliga hälsningar
-${name}
-`;
-            }
-
-            [nameInput, addressInput, ssnInput, phoneInput].forEach(input => {
-                input.addEventListener('input', updatePreview);
-            });
-
-            updatePreview();
-
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                const email = emailInput.value.trim();
-                const subject = encodeURIComponent('Radera mina personuppgifter');
-                const body = encodeURIComponent(preview.value);
-                const bcc = encodeURIComponent('support@180.se,support@birthday.se,info@merinfo.se,info@merinfo.se,info@upplysning.se,kundservice@ratsit.se,hej@nusvar.se,support@krimfup.se,redaktion@lexbase.se,info@biluppgifter.se');
-
-                const mailtoLink = `mailto:${email}?subject=${subject}&bcc=${bcc}&body=${body}`;
-                window.location.href = mailtoLink;
-            });
-
-            const checkboxes = document.querySelectorAll('.task-checkbox');
-            const progressText = document.getElementById('progress');
-
-            function updateProgress() {
-                const total = checkboxes.length;
-                const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
-                progressText.textContent = `${checked} av ${total} steg klara`;
-            }
-
-            checkboxes.forEach(checkbox => {
-                const id = checkbox.id;
-                const saved = localStorage.getItem(`checkbox-${id}`);
-
-                if (saved === 'true') {
-                    checkbox.checked = true;
-                }
-
-                checkbox.addEventListener('change', () => {
-                    localStorage.setItem(`checkbox-${id}`, checkbox.checked);
-                    updateProgress();
-                });
-            });
-
-            // Initial uppdatering
-            updateProgress();
-        </script>
     </main>
 
     <footer class="w-full bg-gray-100 text-gray-600 py-6 mt-8 border-t">
@@ -272,13 +197,14 @@ ${name}
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.287-.012-1.24-.017-2.246-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.776.419-1.305.762-1.605-2.665-.303-5.467-1.332-5.467-5.932 0-1.31.469-2.381 1.236-3.22-.124-.303-.536-1.521.116-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.045.137 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.655.241 2.873.118 3.176.77.839 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.921.43.372.823 1.103.823 2.222 0 1.606-.015 2.902-.015 3.293 0 .322.217.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
                     </svg>
-                    Öppen källkod på GitHub - Alla kan bidra
+                    Hjälp oss bli bättre på GitHub
                 </a>
             </div>
         </div>
     </footer>
 
-
+<script src="script.js"></script>
+<script src="mail.js"></script>
 </body>
 
 </html>
