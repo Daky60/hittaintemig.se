@@ -22,7 +22,7 @@
     <main class="flex-grow container mx-auto px-4 py-8 space-y-8">
 
         <section>
-            <h2 class="text-2xl font-semibold mb-3">Varför ta bort sig?</h2>
+            <h2 class="text-2xl font-semibold mb-3">Varför ta bort sina personuppgifter online?</h2>
             <p class="text-lg leading-relaxed">
                 Många hemsidor samlar in och publicerar personuppgifter som kan skada din integritet. Genom att ta bort
                 din information från dessa sidor kan du skydda dig själv mot identitetsstöld, spam och andra oönskade
@@ -31,13 +31,15 @@
         </section>
 
         <section>
-            <h2 class="text-2xl font-semibold mb-3">Hur fungerar det?</h2>
+            <h2 class="text-2xl font-semibold mb-3">Hur fungerar hemsidan?</h2>
             <p class="text-lg leading-relaxed">
-                När du fyller i formuläret hjälper vi dig skicka ETT mejl till samtliga hemsidor: <br>
+                Vi sammanställer ett mejl åt dig som du sedan kan skicka till nedan hemsidor för att bli borttagen: <br>
                 <strong>mrkoll.se</strong>, <strong>180.se</strong>,
                 <strong>birthday.se</strong>, <strong>upplysning.se</strong>, <strong>ratsit.se</strong>,
                 <strong>krimfup.se</strong>, <strong>lexbase.se</strong>, <strong>biluppgifter.se</strong> och
-                <strong>merinfo.se</strong>.
+                <strong>merinfo.se</strong>. <br>
+                Vi hjälper även till med att sammanställa en lista med andra saker du kan göra för att skydda din
+                integritet online.
         </section>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -90,22 +92,20 @@
             </section>
 
             <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-4">Mer åtgärder du kan ta (allt är gratis)</h2>
+                <h2 class="text-2xl font-semibold mb-4">Mer saker du kan göra (allt är gratis)</h2>
                 <ul class="space-y-4">
+
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="telefonnummer">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="telefonnummer">
                         <label for="telefonnummer" class="text-gray-800">
                             <span class="font-medium">Dölj ditt telefonnummer</span>
-                            <p class="text-sm text-gray-600">
-                                Vissa operatörer döljer ditt nummer från t.ex. Hitta.se automatiskt. Kolla din operatörs
-                                hemsida för att dölja det manuellt.
-                            </p>
+                            <p class="text-sm text-gray-600">Vissa operatörer döljer ditt nummer automatiskt...</p>
                         </label>
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="skatteverket">
-                        <label for="skatteverket" class="text-gray-800">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="hitta">
+                        <label for="hitta" class="text-gray-800">
                             <a href="https://www.hitta.se/kontakta-oss/ta-bort-kontaktsida" target="_blank"
                                 class="font-medium text-red-600 hover:underline">
                                 Ta bort dina personuppgifter från Hitta.se (Krävs BankID)
@@ -114,8 +114,8 @@
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="skatteverket">
-                        <label for="skatteverket" class="text-gray-800">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="eniro">
+                        <label for="eniro" class="text-gray-800">
                             <a href="https://uppdatera.eniro.se/person" target="_blank"
                                 class="font-medium text-red-600 hover:underline">
                                 Ta bort dina personuppgifter från Eniro.se (Krävs BankID)
@@ -124,47 +124,51 @@
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="skatteverket">
-                        <label for="skatteverket" class="text-gray-800">
-                            <a href="https://www.skatteverket.se/privat/folkbokforing/flyttanmalan/sparraobehorigadressandring"
-                                target="_blank" class="font-medium text-red-600 hover:underline">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5"
+                            id="spärr-skatteverket">
+                        <label for="spärr-skatteverket" class="text-gray-800">
+                            <a href="https://www.skatteverket.se/..." target="_blank"
+                                class="font-medium text-red-600 hover:underline">
                                 Spärra obehörig adressändring hos Skatteverket
                             </a>
                         </label>
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="adresslas">
-                        <label for="adresslas" class="text-gray-800">
-                            <a href="https://www.adressandring.se/skydda-din-post/adresslas/" target="_blank"
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="adresslaset">
+                        <label for="adresslaset" class="text-gray-800">
+                            <a href="https://www.adressandring.se/..." target="_blank"
                                 class="font-medium text-red-600 hover:underline">
-                                Aktivera Adresslåset för att låsa eftersändning av post
+                                Aktivera Adresslåset
                             </a>
                         </label>
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="nix">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="nix">
                         <label for="nix" class="text-gray-800">
-                            <a href="https://www.nixtelefon.org/jag-vill" target="_blank"
+                            <a href="https://www.nixtelefon.org/..." target="_blank"
                                 class="font-medium text-red-600 hover:underline">
-                                Blockera ditt telefonnummer från telefonförsäljare (NIX-telefon)
+                                Blockera ditt telefonnummer från telefonförsäljare
                             </a>
                         </label>
                     </li>
 
                     <li class="flex items-start gap-3">
-                        <input type="checkbox" class="mt-1 accent-red-600 w-5 h-5" id="google">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="google">
                         <label for="google" class="text-gray-800">
-                            <a href="https://reportcontent.google.com/forms/rtbf?visit_id=638410356488180862-345888039&hl=sv&rd=1"
-                                target="_blank" class="font-medium text-red-600 hover:underline">
+                            <a href="https://reportcontent.google.com/..." target="_blank"
+                                class="font-medium text-red-600 hover:underline">
                                 Ta bort dina personuppgifter från Google
                             </a>
                         </label>
                     </li>
-
                 </ul>
+                <p id="progress" class="mb-4 text-sm text-gray-700 font-medium">
+                    0/7 steg klara
+                </p>
             </section>
+
 
 
 
@@ -223,12 +227,56 @@ ${name}
                 const mailtoLink = `mailto:${email}?subject=${subject}&bcc=${bcc}&body=${body}`;
                 window.location.href = mailtoLink;
             });
+
+            const checkboxes = document.querySelectorAll('.task-checkbox');
+            const progressText = document.getElementById('progress');
+
+            function updateProgress() {
+                const total = checkboxes.length;
+                const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+                progressText.textContent = `${checked} av ${total} steg klara`;
+            }
+
+            checkboxes.forEach(checkbox => {
+                const id = checkbox.id;
+                const saved = localStorage.getItem(`checkbox-${id}`);
+
+                if (saved === 'true') {
+                    checkbox.checked = true;
+                }
+
+                checkbox.addEventListener('change', () => {
+                    localStorage.setItem(`checkbox-${id}`, checkbox.checked);
+                    updateProgress();
+                });
+            });
+
+            // Initial uppdatering
+            updateProgress();
         </script>
-
-
-
-
     </main>
+
+    <footer class="w-full bg-gray-100 text-gray-600 py-6 mt-8 border-t">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-sm font-medium mb-2">
+                hittamiginte.se är ett <span class="text-red-600 font-semibold">ideellt projekt</span> för att förenkla
+                borttagning av personuppgifter online.
+            </p>
+            <p class="text-xs mb-4">
+                hittamiginte.se är inte associerad med någon av de nämnda företagen.
+            </p>
+            <div class="flex justify-center items-center gap-2">
+                <a href="https://github.com/Daky60/hittaintemig.se" target="_blank"
+                    class="flex items-center text-sm text-red-600 hover:underline">
+                    <svg class="w-5 h-5 mr-1 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.799 8.205 11.387.6.111.82-.261.82-.58 0-.287-.012-1.24-.017-2.246-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.776.419-1.305.762-1.605-2.665-.303-5.467-1.332-5.467-5.932 0-1.31.469-2.381 1.236-3.22-.124-.303-.536-1.521.116-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.045.137 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.655.241 2.873.118 3.176.77.839 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.921.43.372.823 1.103.823 2.222 0 1.606-.015 2.902-.015 3.293 0 .322.217.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    Öppen källkod på GitHub - Alla kan bidra
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
