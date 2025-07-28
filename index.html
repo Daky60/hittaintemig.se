@@ -37,12 +37,18 @@
         <section>
             <h2 class="text-2xl font-semibold mb-3">Hur fungerar hemsidan?</h2>
             <p class="text-lg leading-relaxed">
-                Vi sammanställer ett mejl åt dig som du sedan kan skicka till nedan hemsidor för att bli borttagen: <br>
+                Vi hjälper till att ta bort dina personuppgifter från de mest populära sidorna som samlar in och
+                publicerar din information. <br>
+                De flesta sidorna kan man mejla för att begära borttagning av sina uppgifter, men inte alla.<br>
+                Vissa hemsidor kräver att du loggar in med BankID för att ta bort dina uppgifter. Vi länkar till dessa sidor så att du kan göra det enkelt.<br><br>
+                Genom att fylla i formuläret nedan skapar vi ett mejl som du kan skicka
+                till dessa sidor för att begära borttagning av dina uppgifter:<br>
                 <strong>mrkoll.se</strong>, <strong>180.se</strong>,
                 <strong>birthday.se</strong>, <strong>upplysning.se</strong>, <strong>ratsit.se</strong>,
                 <strong>krimfup.se</strong>, <strong>lexbase.se</strong>, <strong>biluppgifter.se</strong> och
-                <strong>merinfo.se</strong>. <br>
-                Vi hjälper även till med att sammanställa en lista med andra saker du kan göra för att skydda dig online.
+                <strong>merinfo.se</strong> <br>
+                
+                </p>
         </section>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -98,25 +104,17 @@
                 </form>
 
             </section>
-
-            <section class="mb-12">
-                <h2 class="text-2xl font-semibold mb-4">Mer saker du kan göra (allt är gratis)</h2>
+<div class="grid grid-cols-1 gap-2">
+        <section class="mb-6 p-2 bg-yellow-50">
+        <h2 class="text-2xl font-semibold mb-4">Kräver BankID</h2>
                 <ul class="space-y-4">
-
-                    <li class="flex items-start gap-3">
-                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="telefonnummer">
-                        <label for="telefonnummer" class="text-gray-800">
-                            <span class="font-medium">Dölj ditt telefonnummer</span>
-                            <p class="text-sm text-gray-600">Vissa operatörer döljer ditt nummer automatiskt...</p>
-                        </label>
-                    </li>
 
                     <li class="flex items-start gap-3">
                         <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="hitta">
                         <label for="hitta" class="text-gray-800">
                             <a href="https://www.hitta.se/kontakta-oss/ta-bort-kontaktsida" target="_blank"
                                 class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
-                                Ta bort dina personuppgifter från Hitta.se (Krävs BankID)
+                                Hitta.se
                             </a>
                         </label>
                     </li>
@@ -126,8 +124,59 @@
                         <label for="eniro" class="text-gray-800">
                             <a href="https://uppdatera.eniro.se/person" target="_blank"
                                 class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
-                                Ta bort dina personuppgifter från Eniro.se (Krävs BankID)
+                                Eniro.se
                             </a>
+                        </label>
+                    </li>
+
+                </ul>
+    </section>
+
+            <section class="mb-6 p-2 bg-yellow-50">
+        <h2 class="text-2xl font-semibold mb-4">Kräver inte BankID men erbjuds (förmodligen snabbare än mejl)</h2>
+                <ul class="space-y-4">
+
+                    <li class="flex items-start gap-3">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="merinfo">
+                        <label for="merinfo" class="text-gray-800">
+                            <a href="https://www.merinfo.se/ta-bort-mina-uppgifter" target="_blank"
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
+                                Merinfo.se
+                            </a>
+                        </label>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="mrkoll">
+                        <label for="mrkoll" class="text-gray-800">
+                            <a href="https://mrkoll.se/om/andra-uppgifter/" target="_blank"
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
+                                Mrkoll.se
+                            </a>
+                        </label>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="ratsit">
+                        <label for="ratsit" class="text-gray-800">
+                            <a href="https://www.ratsit.se/redigera/dolj" target="_blank"
+                                class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
+                                Ratsit.se
+                            </a>
+                        </label>
+                    </li>
+
+                </ul>
+    </section>
+            <section class="mb-6 p-2 bg-yellow-50">
+                <h2 class="text-2xl font-semibold mb-4">Mer saker du kan göra (allt är gratis)</h2>
+                <ul class="space-y-4">
+
+                    <li class="flex items-start gap-3">
+                        <input type="checkbox" class="task-checkbox mt-1 accent-red-600 w-5 h-5" id="telefonnummer">
+                        <label for="telefonnummer" class="text-gray-800">
+                            <span class="font-medium">Dölj ditt telefonnummer</span>
+                            <p class="text-sm text-gray-600">Vissa operatörer döljer ditt nummer automatiskt, andra inte. Kolla på deras hemsida eller ring din operatör.</p>
                         </label>
                     </li>
 
@@ -147,7 +196,7 @@
                         <label for="adresslaset" class="text-gray-800">
                             <a href="https://www.adressandring.se/..." target="_blank"
                                 class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
-                                Aktivera Adresslåset
+                                Lås eftersänding av post
                             </a>
                         </label>
                     </li>
@@ -157,7 +206,7 @@
                         <label for="nix" class="text-gray-800">
                             <a href="https://www.nixtelefon.org/..." target="_blank"
                                 class="font-medium text-red-600 underline hover:text-red-800 hover:underline">
-                                Blockera ditt telefonnummer från telefonförsäljare
+                                Blockera ditt telefonnummer från telefonförsäljare (nixtelefon.org)
                             </a>
                         </label>
                     </li>
@@ -177,8 +226,7 @@
                 </p>
             </section>
 
-
-
+</div>
 
 
         </div>

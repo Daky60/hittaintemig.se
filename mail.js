@@ -1,8 +1,9 @@
 function generatePreview(name, address, ssn, phone) {
     const lines = [
         "Hej!",
+        "",
         "Jag vill härmed utöva min rätt till radering med stöd av artikel 17 i dataskyddsförordningen.",
-        "Jag ber er att radera alla personuppgifter som ni har om mig från er hemsida, däribland:",
+        "Jag ber er att radera alla personuppgifter som ni har om mig, däribland:",
         `Namn: ${name}`,
         `Adress: ${address}`,
         `Personnummer: ${ssn}`,
