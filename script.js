@@ -6,7 +6,6 @@ function updatePreview() {
     const name = form.querySelector('#name').value;
     const address = form.querySelector('#address').value;
     const phone = form.querySelector('#phone').value;
-
     preview.value = generatePreview(name, address, phone);
 }
 
