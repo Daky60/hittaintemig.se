@@ -1,4 +1,4 @@
-function generatePreview(name, address, ssn, phone) {
+function generatePreview(name, address, phone) {
     const lines = [
         "Hej!",
         "",
@@ -6,7 +6,6 @@ function generatePreview(name, address, ssn, phone) {
         "Jag ber er att radera alla personuppgifter som ni har om mig, däribland:",
         `Namn: ${name}`,
         `Adress: ${address}`,
-        `Personnummer: ${ssn}`,
         `Telefonnummer: ${phone}`,
         "",
         "Ni kan hitta information om era skyldigheter som personuppgiftsansvarig på Integritetsskyddsmyndighetens webbplats (www.imy.se).",

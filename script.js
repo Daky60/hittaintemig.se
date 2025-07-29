@@ -5,10 +5,9 @@ const emailInput = form.querySelector('#email');
 function updatePreview() {
     const name = form.querySelector('#name').value;
     const address = form.querySelector('#address').value;
-    const ssn = form.querySelector('#ssn').value;
     const phone = form.querySelector('#phone').value;
 
-    preview.value = generatePreview(name, address, ssn, phone);
+    preview.value = generatePreview(name, address, phone);
 }
 
 // Kör updatePreview när något i formuläret ändras
