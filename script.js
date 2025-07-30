@@ -35,7 +35,7 @@ const progressText = document.getElementById('progress');
 function updateProgress() {
     const total = checkboxes.length;
     const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
-    progressText.textContent = `${checked} av ${total} steg klara`;
+    progressText.textContent = `Fler steg du kan ta: (${checked}/${total})`;
 }
 
 checkboxes.forEach(checkbox => {
